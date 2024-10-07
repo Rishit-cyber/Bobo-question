@@ -32,13 +32,14 @@ h2 {
 
 .btn-group {
     margin-top: 50px;
-    position: relative;
-    height: 40px;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
 }
 
 button {
     width: 150px;
-    height: inherit;
+    height: 60px; /* Increase height for better touch targets */
     color: white;
     font-size: 1.2em;
     border-radius: 30px;
@@ -46,6 +47,7 @@ button {
     cursor: pointer;
     box-shadow: 0 2px 4px gray;
     border: 2px solid #e94d58;
+    margin: 10px 0; /* Add margin to separate buttons */
 }
 
 button.yes-btn {
@@ -55,6 +57,4 @@ button.yes-btn {
 button.no-btn {
     background: white;
     color: #e94d58;
-    margin-top: 20px; /* Add margin to separate the buttons */
-    position: relative; /* Change position to relative */
 }
