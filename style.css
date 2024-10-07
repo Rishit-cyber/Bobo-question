@@ -55,8 +55,6 @@ button.yes-btn {
 button.no-btn {
     background: white;
     color: #e94d58;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: left 0.3s ease;
+    margin-top: 20px; /* Add margin to separate the buttons */
+    position: relative; /* Change position to relative */
 }
